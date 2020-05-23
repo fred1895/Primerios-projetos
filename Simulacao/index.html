@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Simulação</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="topo">
+		<h1>Simulação de campeonato mata-mata</h1>
+		<h3>Observações</h3>
+		<ul>
+			<li>Escolha sua opção de fase</li>
+			<li>Escreva os nomes dos times</li>
+			<li>Depois de escolher, clique no botão ok ao lado do time</li>
+			<li>Após escrever o nome de todos os times e clicar em ok, clique em JOGAR </li>
+		</ul>
+		<div id="opcoes">
+		<select id="language" onChange="update()">
+			<option value="">Selecione a fase</option>
+			<option value="oitavas">Oitavas</option>
+			<option value="en">English</option>
+			<option value="es">Español</option>
+		</select>
+		<span id="botao-jogar">
+
+		</span>
+		</div>
+	</div>
+	<input type="hidden" id="value">
+	<input type="hidden" id="text">
+
+	<div id="container">
+
+		<div class="menu">
+			<h3>Insira todos os times</h3>
+			<div class="jogos-oitavas">
+
+				<div class="bloco-jogo">
+					<div id="time0"></div>
+					<div id="send0"></div>
+					<div class="limpar">
+						<p>X</p>
+					</div>
+					<div id="time1"></div>
+					<div id="send1"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="time2"></div>
+					<div id="send2"></div>
+					<div class="limpar">
+						<p>X</p>
+					</div>
+					<div id="time3"></div>
+					<div id="send3"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="time4"></div>
+					<div id="send4"></div>
+					<div class="limpar">
+						<p>X</p>
+					</div>
+					<div id="time5"></div>
+					<div id="send5"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="time6"></div>
+					<div id="send6"></div>
+					<div class="limpar">
+						<p>X</p>
+					</div>
+					<div id="time7"></div>
+					<div id="send7"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="time8"></div>
+					<div id="send8"></div>
+					<div class="limpar">
+						<p>X</p>
+					</div>
+					<div id="time9"></div>
+					<div id="send9"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="time10"></div>
+					<div id="send10"></div>
+					<div class="limpar">
+						<p>X</p>
+					</div>
+					<div id="time11"></div>
+					<div id="send11"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="time12"></div>
+					<div id="send12"></div>
+					<div class="limpar">
+						<p>X</p>
+					</div>
+					<div id="time13"></div>
+					<div id="send13"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="time14"></div>
+					<div id="send14"></div>
+					<div class="limpar">
+						<p>X</p>
+					</div>
+					<div id="time15"></div>
+					<div id="send15"></div>
+					<div class="limpar"></div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="menu">
+			<h3>Jogos de Oitavas</h3>
+
+			<div class="jogos-oitavas">
+
+				<div class="bloco-jogo">
+					<div id="oitavas0"></div>
+					<div id="placar0"></div>
+					<div class="limpar"></div>
+					<div id="oitavas1"></div>
+					<div id="placar1"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="oitavas2"></div>
+					<div id="placar2"></div>
+					<div class="limpar"></div>
+					<div id="oitavas3"></div>
+					<div id="placar3"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="oitavas4"></div>
+					<div id="placar4"></div>
+					<div class="limpar"></div>
+					<div id="oitavas5"></div>
+					<div id="placar5"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="oitavas6"></div>
+					<div id="placar6"></div>
+					<div class="limpar"></div>
+					<div id="oitavas7"></div>
+					<div id="placar7"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="oitavas8"></div>
+					<div id="placar8"></div>
+					<div class="limpar"></div>
+					<div id="oitavas9"></div>
+					<div id="placar9"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="oitavas10"></div>
+					<div id="placar10"></div>
+					<div class="limpar"></div>
+					<div id="oitavas11"></div>
+					<div id="placar11"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="oitavas12"></div>
+					<div id="placar12"></div>
+					<div class="limpar"></div>
+					<div id="oitavas13"></div>
+					<div id="placar13"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="oitavas14"></div>
+					<div id="placar14"></div>
+					<div class="limpar"></div>
+					<div id="oitavas15"></div>
+					<div id="placar15"></div>
+					<div class="limpar"></div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="menu">
+			<h3>Jogos de quartas</h3>
+
+			<div class="jogos-oitavas">
+
+				<div class="bloco-jogo">
+					<div id="quartas0"></div>
+					<div id="placar20"></div>
+					<div class="limpar">
+						<p>X</p>
+					</div>
+					<div id="quartas1"></div>
+					<div id="placar21"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="quartas2"></div>
+					<div id="placar22"></div>
+					<div class="limpar"></div>
+					<div id="quartas3"></div>
+					<div id="placar23"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="quartas4"></div>
+					<div id="placar24"></div>
+					<div class="limpar"></div>
+					<div id="quartas5"></div>
+					<div id="placar25"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="quartas6"></div>
+					<div id="placar26"></div>
+					<div class="limpar"></div>
+					<div id="quartas7"></div>
+					<div id="placar27"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<h3>Jogos de Semi</h3>
+
+				<div class="bloco-jogo">
+					<div id="semi0"></div>
+					<div id="placar30"></div>
+					<div class="limpar"></div>
+					<div id="semi1"></div>
+					<div id="placar31"></div>
+					<div class="limpar"></div>
+				</div>
+
+				<div class="bloco-jogo">
+					<div id="semi2"></div>
+					<div id="placar32"></div>
+					<div class="limpar"></div>
+					<div id="semi3"></div>
+					<div id="placar33"></div>
+					<div class="limpar"></div>
+				</div>
+			</div>
+
+		 </div>
+		 
+		 <div class="menu">
+			<h3>Jogo da final</h3>
+			<div class="bloco-jogo">
+				<div id="final0"></div>
+				<div id="placar40"></div>
+				<div class="limpar"></div>
+				<div id="final1"></div>
+				<div id="placar41"></div>
+				<div class="limpar"></div>
+			</div>
+
+	</div>
+
+	<script type="text/javascript">
+		/*function update() {
+			var select = document.getElementById('language');
+			var option = select.options[select.selectedIndex];
+
+			document.getElementById('value').value = option.value;
+			document.getElementById('text').value = option.text;
+
+			var valor
+
+			console.log(option.value)
+
+			//Fazer os jogos
+
+			//Array que armazenará os times
+			times = []
+			botoes = []
+			clubes = [];
+
+			//Início do algoritmo de oitavas
+			if (option.value === "oitavas") {
+
+				//Cria os campos para inserir os times e os respectivos IDs
+				for (var i = 0; i < 16; i++) {
+					times[i] = document.createElement("INPUT");
+					times[i].setAttribute("type", "text");
+					times[i].setAttribute("id", "clube" + i);
+					document.body.appendChild(times[i]);
+					console.log(times[i])
+
+					//Cria os botoes para armazenar o valor
+					botoes[i] = document.createElement("BUTTON");
+					botoes[i].innerText = "Selecionar";
+					botoes[i].setAttribute("id", "botao" + i);
+					document.body.appendChild(botoes[i]);
+					console.log(botoes[i])
+				}
+				//Fim da criação de inputs e buttons
+
+				//Atribuindo valor na mão ;(
+				botoes[0].onclick = function armazenaValor() {
+					document.getElementById('clube0').value
+					clubes[0] = document.getElementById('clube0').value
+					console.log(clubes[0])
+				}
+
+				botoes[1].onclick = function armazenaValor() {
+					document.getElementById('clube1').value
+					clubes[1] = document.getElementById('clube1').value
+					console.log(clubes[1])
+				}
+
+				botoes[2].onclick = function armazenaValor() {
+					document.getElementById('clube2').value
+					clubes[2] = document.getElementById('clube2').value
+					console.log(clubes[2])
+				}
+
+				botoes[3].onclick = function armazenaValor() {
+					document.getElementById('clube3').value
+					clubes[3] = document.getElementById('clube3').value
+					console.log(clubes[3])
+				}
+
+				botoes[4].onclick = function armazenaValor() {
+					document.getElementById('clube4').value
+					clubes[4] = document.getElementById('clube4').value
+					console.log(clubes[4])
+				}
+
+				botoes[5].onclick = function armazenaValor() {
+					document.getElementById('clube5').value
+					clubes[5] = document.getElementById('clube5').value
+					console.log(clubes[5])
+				}
+
+				botoes[6].onclick = function armazenaValor() {
+					document.getElementById('clube6').value
+					clubes[6] = document.getElementById('clube6').value
+					console.log(clubes[6])
+				}
+
+				botoes[7].onclick = function armazenaValor() {
+					document.getElementById('clube7').value
+					clubes[7] = document.getElementById('clube7').value
+					console.log(clubes[7])
+				}
+
+				botoes[8].onclick = function armazenaValor() {
+					document.getElementById('clube8').value
+					clubes[8] = document.getElementById('clube8').value
+					console.log(clubes[8])
+				}
+
+				botoes[9].onclick = function armazenaValor() {
+					document.getElementById('clube9').value
+					clubes[9] = document.getElementById('clube9').value
+					console.log(clubes[9])
+				}
+
+				botoes[10].onclick = function armazenaValor() {
+					document.getElementById('clube10').value
+					clubes[10] = document.getElementById('clube10').value
+					console.log(clubes[10])
+				}
+
+				botoes[11].onclick = function armazenaValor() {
+					document.getElementById('clube11').value
+					clubes[11] = document.getElementById('clube11').value
+					console.log(clubes[11])
+				}
+
+				botoes[12].onclick = function armazenaValor() {
+					document.getElementById('clube12').value
+					clubes[12] = document.getElementById('clube12').value
+					console.log(clubes[12])
+				}
+
+				botoes[13].onclick = function armazenaValor() {
+					document.getElementById('clube13').value
+					clubes[13] = document.getElementById('clube13').value
+					console.log(clubes[13])
+				}
+
+				botoes[14].onclick = function armazenaValor() {
+					document.getElementById('clube14').value
+					clubes[14] = document.getElementById('clube14').value
+					console.log(clubes[14])
+				}
+
+				botoes[15].onclick = function armazenaValor() {
+					document.getElementById('clube15').value
+					clubes[15] = document.getElementById('clube15').value
+					console.log(clubes[15])
+				}
+				//Fim atribuição de valor do botão para os inputs pela ID
+
+
+
+				//Criando botao para iniciar jogos de oitavas
+				botao = document.createElement("BUTTON");
+				botao.innerText = "JOGAR";
+				botao.setAttribute("id", "jogar");
+				document.body.appendChild(botao);
+
+				//Ao clicar inicia os jogos
+				botao.onclick = function jogar() {
+
+					//Início jogos de oitavas
+					venceu = 0;
+					venceuOitavas = [8]
+					for (var i = 0; i < 16; i++) {
+
+						num1 = Math.floor(Math.random() * 5);
+						num2 = Math.floor(Math.random() * 5);
+
+						console.log(clubes[i] + " " + num1 + " x " + num2 + " " + clubes[i + 1])
+
+						if (num1 > num2) {
+							venceuOitavas[venceu] = clubes[i];
+							venceu++;
+						} else {
+							venceuOitavas[venceu] = clubes[i + 1];
+							venceu++;
+						}
+						console.log(venceuOitavas[venceu - 1])
+						i++
+					}
+					//Fim jogos de oitavas
+
+					//Início jogos de quartas
+					venceu = 0;
+					venceuQuartas = [4];
+					for (var i = 0; i < 8; i++) {
+
+						num1 = Math.floor(Math.random() * 5);
+						num2 = Math.floor(Math.random() * 5);
+
+						console.log(venceuOitavas[i] + " " + num1 + " x " + num2 + " " + venceuOitavas[i + 1])
+
+						if (num1 > num2) {
+							venceuQuartas[venceu] = venceuOitavas[i];
+							venceu++;
+						} else {
+							venceuQuartas[venceu] = venceuOitavas[i + 1];
+							venceu++;
+						}
+						console.log(venceuQuartas[venceu - 1]);
+						i++;
+					}
+					//Fim dos jogos de quartas
+
+					//Início jogos de semis
+					venceu = 0;
+					venceuSemis = [2];
+
+					for (var i = 0; i < 4; i++) {
+						num1 = Math.floor(Math.random() * 5);
+						num2 = Math.floor(Math.random() * 5);
+
+						console.log(venceuQuartas[i] + " " + num1 + " x " + num2 + " " + venceuQuartas[i + 1])
+
+						if (num1 > num2) {
+							venceuSemis[venceu] = venceuQuartas[i];
+							venceu++;
+						} else {
+							venceuSemis[venceu] = venceuQuartas[i + 1];
+							venceu++;
+						}
+						console.log(venceuSemis[venceu - 1]);
+						i++;
+					}
+					//Fim jogos de semis
+
+					//Início da Final
+					venceu = 0;
+
+					for (var i = 0; i < 2; i++) {
+						num1 = Math.floor(Math.random() * 5);
+						num2 = Math.floor(Math.random() * 5);
+
+						console.log(venceuSemis[i] + " " + num1 + " x " + num2 + " " + venceuSemis[i + 1])
+
+						if (num1 > num2) {
+							campeao = venceuSemis[i];
+						} else {
+							campeao = venceuSemis[i + 1];
+						}
+						console.log(campeao);
+						i++;
+					}
+					//Fim final
+				}
+				//Jogo encerrado
+			}
+			//Fim do Algoritomo de oitavas
+
+		}
+
+		update();*/
+	</script>
+	<script src="main.js"></script>
+</body>
+
+</html>
