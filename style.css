@@ -90,6 +90,7 @@ h3{
     margin:2px;
     margin-bottom: 25px;
     padding: 8px;
+    text-align: center;
 }
 
 #clube0, #clube2, #clube4, #clube6, #clube8, #clube10, #clube12, #clube14,  .time1{
@@ -138,6 +139,9 @@ button{
     height: 20px;
     width: 100px;
     float: left;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 #oitavas1, #oitavas3, #oitavas5, #oitavas7, #oitavas9, #oitavas11, #oitavas13, #oitavas15, 
 #quartas1, #quartas3, #quartas5, #quartas7,
@@ -148,6 +152,7 @@ button{
     margin-top: 5px;
     margin-bottom: 3px;
     float: left;
+    text-align: center;
 }
 
 #placar0, #placar2, #placar4, #placar6, #placar8, #placar10, #placar12, #placar14, 
@@ -157,9 +162,10 @@ button{
     height: 15px;
     width: 30px;
     float: left;
-    margin-top: 3px;
+    margin-top: 10px;
     margin-bottom: 5px;
     margin-left: 8px;
+    text-align: center;
 }
 #placar1, #placar3, #placar5, #placar7, #placar9, #placar11, #placar13, #placar15, 
 #placar21, #placar23, #placar25, #placar27,
@@ -170,11 +176,13 @@ button{
     float: left;
     margin-top: 8px;
     margin-left: 8px; 
+    text-align: center;
  }
  
 
 .limpar{
     clear: both;
     text-indent: -35px;
+    margin-top: 4px;
 }
 
