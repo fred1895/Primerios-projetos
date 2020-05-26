@@ -135,7 +135,8 @@ button{
 #oitavas0, #oitavas2, #oitavas4, #oitavas6, #oitavas8, #oitavas10, #oitavas12, #oitavas14, 
 #quartas0, #quartas2, #quartas4, #quartas6,
 #semi0, #semi2,
-#final0{
+#final0,
+#campeao{
     height: 20px;
     width: 100px;
     float: left;

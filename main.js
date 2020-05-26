@@ -301,6 +301,10 @@ function update() {
                 i++;
             }
             //Fim final
+
+            champion = document.createElement("SPAN");
+            champion.innerText = campeao;
+            document.getElementById('campeao').appendChild(champion);
         }
         //Jogo encerrado																	
     }
