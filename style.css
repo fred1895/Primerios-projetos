@@ -4,10 +4,12 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background: url(https://cdn.pixabay.com/photo/2015/09/16/16/59/hexagon-background-942982_960_720.png);
     background-color:#f5f5f5;
 }
 
 #topo{
+    background: url(https://cdn.pixabay.com/photo/2015/10/17/17/14/background-992850_960_720.png);
     background-color: #000;
     border-radius: 20px;
     border: 1.5px ridge #5e5642;
@@ -17,7 +19,6 @@ body{
     text-align: center;
     text-decoration: none;
     padding: 8px;
-    opacity: 0.8;
 }
 
 .topo-left, .topo-right{
@@ -114,7 +115,7 @@ h3{
     margin: 10px auto;
     width: 980px;
     height: 860px;
-    background-color: #fff;
+    background-color:#f5f5f5;
     border: 1px ridge #000;
     border-radius: 10px;
 }
@@ -179,6 +180,13 @@ button{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+#campeao{
+    text-transform: uppercase;
+    color: #cf800a;
+    font-weight: bold;
 }
 #oitavas1, #oitavas3, #oitavas5, #oitavas7, #oitavas9, #oitavas11, #oitavas13, #oitavas15, 
 #quartas1, #quartas3, #quartas5, #quartas7,
@@ -190,6 +198,7 @@ button{
     margin-bottom: 3px;
     float: left;
     text-align: center;
+    text-transform: capitalize;
 }
 
 #placar0, #placar2, #placar4, #placar6, #placar8, #placar10, #placar12, #placar14, 

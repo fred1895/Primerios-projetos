@@ -82,9 +82,13 @@ function update() {
                 if (num1 > num2) {
                     venceuOitavas[venceu] = clubes[i];
                     venceu++;
+                    placar[i].style.color = "green";
+                    placar[i+1].style.color = "red";
                 } else {
                     venceuOitavas[venceu] = clubes[i + 1];
                     venceu++;
+                    placar[i].style.color = "red";
+                    placar[i+1].style.color = "green";
                 }
                 console.log(venceuOitavas[venceu - 1])
 
@@ -118,14 +122,16 @@ function update() {
                 placarQuartas[i + 1].innerText = num2;
                 document.getElementById('placar2' + (i + 1)).appendChild(placarQuartas[i + 1]);
 
-                //console.log(venceuOitavas[i] + " " + num1 + " x " + num2 + " " + venceuOitavas[i + 1])
-
                 if (num1 > num2) {
                     venceuQuartas[venceu] = venceuOitavas[i];
                     venceu++;
+                    placarQuartas[i].style.color = "green";
+                    placarQuartas[i+1].style.color = "red";
                 } else {
                     venceuQuartas[venceu] = venceuOitavas[i + 1];
                     venceu++;
+                    placarQuartas[i].style.color = "red";
+                    placarQuartas[i+1].style.color = "green";
                 }
                 console.log(venceuQuartas[venceu - 1]);
                 i++;
@@ -158,14 +164,16 @@ function update() {
                 placarSemi[i + 1].innerText = num2;
                 document.getElementById('placar3' + (i + 1)).appendChild(placarSemi[i + 1]);
 
-                //console.log(venceuQuartas[i] + " " + num1 + " x " + num2 + " " + venceuQuartas[i + 1])
-
                 if (num1 > num2) {
                     venceuSemis[venceu] = venceuQuartas[i];
                     venceu++;
+                    placarSemi[i].style.color = "green";
+                    placarSemi[i+1].style.color = "red";
                 } else {
                     venceuSemis[venceu] = venceuQuartas[i + 1];
                     venceu++;
+                    placarSemi[i].style.color = "red";
+                    placarSemi[i+1].style.color = "green";
                 }
                 console.log(venceuSemis[venceu - 1]);
                 i++;
@@ -197,12 +205,14 @@ function update() {
                 placarFinal[i + 1].innerText = num2;
                 document.getElementById('placar4' + (i + 1)).appendChild(placarFinal[i + 1]);
 
-                //console.log(venceuSemis[i] + " " + num1 + " x " + num2 + " " + venceuSemis[i + 1])
-
                 if (num1 > num2) {
                     campeao = venceuSemis[i];
+                    placarFinal[i].style.color = "green";
+                    placarFinal[i+1].style.color = "red";
                 } else {
                     campeao = venceuSemis[i + 1];
+                    placarFinal[i].style.color = "red";
+                    placarFinal[i+1].style.color = "Green";
                 }
                 console.log(campeao);
                 i++;
@@ -279,14 +289,16 @@ function update() {
                 placarQuartas[i + 1].innerText = num2;
                 document.getElementById('placar2' + (i + 1)).appendChild(placarQuartas[i + 1]);
 
-                //console.log(venceuOitavas[i] + " " + num1 + " x " + num2 + " " + venceuOitavas[i + 1])
-
                 if (num1 > num2) {
                     venceuQuartas[venceu] = clubes[i];
                     venceu++;
+                    placarQuartas[i].style.color = "green";
+                    placarQuartas[i+1].style.color = "red";
                 } else {
                     venceuQuartas[venceu] = clubes[i + 1];
                     venceu++;
+                    placarQuartas[i].style.color = "red";
+                    placarQuartas[i+1].style.color = "green";
                 }
                 console.log(venceuQuartas[venceu - 1]);
                 i++;
@@ -319,14 +331,16 @@ function update() {
                 placarSemi[i + 1].innerText = num2;
                 document.getElementById('placar3' + (i + 1)).appendChild(placarSemi[i + 1]);
 
-                //console.log(venceuQuartas[i] + " " + num1 + " x " + num2 + " " + venceuQuartas[i + 1])
-
                 if (num1 > num2) {
                     venceuSemis[venceu] = venceuQuartas[i];
                     venceu++;
+                    placarSemi[i].style.color = "green";
+                    placarSemi[i+1].style.color = "red";
                 } else {
                     venceuSemis[venceu] = venceuQuartas[i + 1];
                     venceu++;
+                    placarSemi[i].style.color = "red";
+                    placarSemi[i+1].style.color = "green";
                 }
                 console.log(venceuSemis[venceu - 1]);
                 i++;
@@ -358,12 +372,14 @@ function update() {
                 placarFinal[i + 1].innerText = num2;
                 document.getElementById('placar4' + (i + 1)).appendChild(placarFinal[i + 1]);
 
-                //console.log(venceuSemis[i] + " " + num1 + " x " + num2 + " " + venceuSemis[i + 1])
-
                 if (num1 > num2) {
                     campeao = venceuSemis[i];
+                    placarFinal[i].style.color = "green";
+                    placarFinal[i+1].style.color = "red";
                 } else {
                     campeao = venceuSemis[i + 1];
+                    placarFinal[i].style.color = "red";
+                    placarFinal[i+1].style.color = "Green";
                 }
                 console.log(campeao);
                 i++;
@@ -374,8 +390,10 @@ function update() {
             champion.innerText = campeao;
             document.getElementById('campeao').appendChild(champion);
         }
+        //Fim dos jogos
 
     }
+    //Fim algoritimo de quartas
 
 
 }
