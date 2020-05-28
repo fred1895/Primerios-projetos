@@ -10,22 +10,33 @@
 <body>
 	<div id="topo">
 		<h1>Simulação de campeonato mata-mata</h1>
-		<h3>Observações</h3>
-		<ul>
-			<li>Escolha sua opção de fase</li>
-			<li>Escreva os nomes dos times</li>
-			<li>Depois de escolher, clique no botão ok ao lado do time</li>
-			<li>Após escrever o nome de todos os times e clicar em ok, clique em JOGAR </li>
-		</ul>
-		<div id="opcoes">
-		<select id="language" onChange="update()">
-			<option value="">Selecione a fase</option>
-			<option value="oitavas">Oitavas</option>
-			<option value="quartas">Quartas</option>
-		</select>
-		<span id="botao-jogar">
+		<div class="topo-left">
+			<h3>Como jogar</h3>
+			<ul>
+				<li>Escolha sua opção de fase: Oitavas ou Quartas</li>
+				<li>Escreva os nomes dos times no respectivo chaveamento</li>
+				<li>Certifique-se que preencheu todos os times</li>
+				<li>Após escrever o nome de todos os times, clique em JOGAR </li>
+			</ul>
+		</div>
 
-		</span>
+		<div class="topo-right">
+			<h3>Observações</h3>
+			<ul>
+				<li>O primeiro time joga "em casa" e o segundo time joga "fora de casa"</li>
+				<li>Em caso de empate ganha o time que está jogando fora de casa</li>
+				<li>Apenas um jogo por fase, ou seja, não tem "ida e volta"</li>
+				<li>Caso queira jogar de novo, recarregue a página</li>
+			</ul>
+		</div>
+		<div id="opcoes">
+			<select id="language" onChange="update()">
+				<option value="">Selecione a fase</option>
+				<option value="oitavas">Oitavas</option>
+				<option value="quartas">Quartas</option>
+			</select>
+			<span id="botao-jogar"></span>
+			<span id="botao-atualiza"></span>
 		</div>
 	</div>
 	<input type="hidden" id="value">
@@ -41,7 +52,7 @@
 					<div id="time0"></div>
 					<div id="send0"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="time1"></div>
 					<div id="send1"></div>
@@ -52,7 +63,7 @@
 					<div id="time2"></div>
 					<div id="send2"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="time3"></div>
 					<div id="send3"></div>
@@ -63,7 +74,7 @@
 					<div id="time4"></div>
 					<div id="send4"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="time5"></div>
 					<div id="send5"></div>
@@ -74,7 +85,7 @@
 					<div id="time6"></div>
 					<div id="send6"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="time7"></div>
 					<div id="send7"></div>
@@ -85,7 +96,7 @@
 					<div id="time8"></div>
 					<div id="send8"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="time9"></div>
 					<div id="send9"></div>
@@ -96,7 +107,7 @@
 					<div id="time10"></div>
 					<div id="send10"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="time11"></div>
 					<div id="send11"></div>
@@ -107,7 +118,7 @@
 					<div id="time12"></div>
 					<div id="send12"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="time13"></div>
 					<div id="send13"></div>
@@ -118,7 +129,7 @@
 					<div id="time14"></div>
 					<div id="send14"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="time15"></div>
 					<div id="send15"></div>
@@ -137,7 +148,7 @@
 					<div id="oitavas0"></div>
 					<div id="placar0"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="oitavas1"></div>
 					<div id="placar1"></div>
@@ -148,7 +159,7 @@
 					<div id="oitavas2"></div>
 					<div id="placar2"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="oitavas3"></div>
 					<div id="placar3"></div>
@@ -159,7 +170,7 @@
 					<div id="oitavas4"></div>
 					<div id="placar4"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="oitavas5"></div>
 					<div id="placar5"></div>
@@ -170,7 +181,7 @@
 					<div id="oitavas6"></div>
 					<div id="placar6"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="oitavas7"></div>
 					<div id="placar7"></div>
@@ -181,7 +192,7 @@
 					<div id="oitavas8"></div>
 					<div id="placar8"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="oitavas9"></div>
 					<div id="placar9"></div>
@@ -192,7 +203,7 @@
 					<div id="oitavas10"></div>
 					<div id="placar10"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="oitavas11"></div>
 					<div id="placar11"></div>
@@ -203,7 +214,7 @@
 					<div id="oitavas12"></div>
 					<div id="placar12"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="oitavas13"></div>
 					<div id="placar13"></div>
@@ -214,7 +225,7 @@
 					<div id="oitavas14"></div>
 					<div id="placar14"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="oitavas15"></div>
 					<div id="placar15"></div>
@@ -233,7 +244,7 @@
 					<div id="quartas0"></div>
 					<div id="placar20"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="quartas1"></div>
 					<div id="placar21"></div>
@@ -244,7 +255,7 @@
 					<div id="quartas2"></div>
 					<div id="placar22"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="quartas3"></div>
 					<div id="placar23"></div>
@@ -255,7 +266,7 @@
 					<div id="quartas4"></div>
 					<div id="placar24"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="quartas5"></div>
 					<div id="placar25"></div>
@@ -266,26 +277,26 @@
 					<div id="quartas6"></div>
 					<div id="placar26"></div>
 					<div class="limpar">
-						<p>X</p>
+						<p>x</p>
 					</div>
 					<div id="quartas7"></div>
 					<div id="placar27"></div>
 					<div class="limpar"></div>
 				</div>
 
-		
+
 			</div>
 
-		 </div>
-		 
-		 <div class="menu">
+		</div>
+
+		<div class="menu">
 			<h3>Jogos de Semi</h3>
 
 			<div class="bloco-jogo">
 				<div id="semi0"></div>
 				<div id="placar30"></div>
 				<div class="limpar">
-					<p>X</p>
+					<p>x</p>
 				</div>
 				<div id="semi1"></div>
 				<div id="placar31"></div>
@@ -296,7 +307,7 @@
 				<div id="semi2"></div>
 				<div id="placar32"></div>
 				<div class="limpar">
-					<p>X</p>
+					<p>x</p>
 				</div>
 				<div id="semi3"></div>
 				<div id="placar33"></div>
@@ -307,7 +318,7 @@
 				<div id="final0"></div>
 				<div id="placar40"></div>
 				<div class="limpar">
-					<p>X</p>
+					<p>x</p>
 				</div>
 				<div id="final1"></div>
 				<div id="placar41"></div>
@@ -324,9 +335,9 @@
 				<div class="limpar"></div>
 			</div>
 
-	</div>
+		</div>
 
-	<script src="main.js"></script>
+		<script src="main.js"></script>
 </body>
 
 </html>

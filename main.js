@@ -25,116 +25,8 @@ function update() {
             times[i].setAttribute("type", "text");
             times[i].setAttribute("id", "clube" + i);
             document.getElementById('time' + i).appendChild(times[i]);
-            console.log(times[i])
-
-            //Cria os botoes para armazenar o valor
-            botoes[i] = document.createElement("BUTTON");
-            botoes[i].innerText = "OK";
-            botoes[i].setAttribute("id", "botao" + i);
-            document.getElementById('send' + i).appendChild(botoes[i]);
-            console.log(botoes[i])
         }
         //Fim da criação de inputs e buttons
-
-        //Atribuindo valor na mão ;(
-        botoes[0].onclick = function armazenaValor() {
-            document.getElementById('clube0').value
-            clubes[0] = document.getElementById('clube0').value
-            console.log(clubes[0])
-        }
-
-        botoes[1].onclick = function armazenaValor() {
-            document.getElementById('clube1').value
-            clubes[1] = document.getElementById('clube1').value
-            console.log(clubes[1])
-        }
-
-        botoes[2].onclick = function armazenaValor() {
-            document.getElementById('clube2').value
-            clubes[2] = document.getElementById('clube2').value
-            console.log(clubes[2])
-        }
-
-        botoes[3].onclick = function armazenaValor() {
-            document.getElementById('clube3').value
-            clubes[3] = document.getElementById('clube3').value
-            console.log(clubes[3])
-        }
-
-        botoes[4].onclick = function armazenaValor() {
-            document.getElementById('clube4').value
-            clubes[4] = document.getElementById('clube4').value
-            console.log(clubes[4])
-        }
-
-        botoes[5].onclick = function armazenaValor() {
-            document.getElementById('clube5').value
-            clubes[5] = document.getElementById('clube5').value
-            console.log(clubes[5])
-        }
-
-        botoes[6].onclick = function armazenaValor() {
-            document.getElementById('clube6').value
-            clubes[6] = document.getElementById('clube6').value
-            console.log(clubes[6])
-        }
-
-        botoes[7].onclick = function armazenaValor() {
-            document.getElementById('clube7').value
-            clubes[7] = document.getElementById('clube7').value
-            console.log(clubes[7])
-        }
-
-        botoes[8].onclick = function armazenaValor() {
-            document.getElementById('clube8').value
-            clubes[8] = document.getElementById('clube8').value
-            console.log(clubes[8])
-        }
-
-        botoes[9].onclick = function armazenaValor() {
-            document.getElementById('clube9').value
-            clubes[9] = document.getElementById('clube9').value
-            console.log(clubes[9])
-        }
-
-        botoes[10].onclick = function armazenaValor() {
-            document.getElementById('clube10').value
-            clubes[10] = document.getElementById('clube10').value
-            console.log(clubes[10])
-        }
-
-        botoes[11].onclick = function armazenaValor() {
-            document.getElementById('clube11').value
-            clubes[11] = document.getElementById('clube11').value
-            console.log(clubes[11])
-        }
-
-        botoes[12].onclick = function armazenaValor() {
-            document.getElementById('clube12').value
-            clubes[12] = document.getElementById('clube12').value
-            console.log(clubes[12])
-        }
-
-        botoes[13].onclick = function armazenaValor() {
-            document.getElementById('clube13').value
-            clubes[13] = document.getElementById('clube13').value
-            console.log(clubes[13])
-        }
-
-        botoes[14].onclick = function armazenaValor() {
-            document.getElementById('clube14').value
-            clubes[14] = document.getElementById('clube14').value
-            console.log(clubes[14])
-        }
-
-        botoes[15].onclick = function armazenaValor() {
-            document.getElementById('clube15').value
-            clubes[15] = document.getElementById('clube15').value
-            console.log(clubes[15])
-        }
-        //Fim atribuição de valor do botão para os inputs pela ID
-
-
 
         //Criando botao para iniciar jogos de oitavas
         botao = document.createElement("BUTTON");
@@ -142,8 +34,24 @@ function update() {
         botao.setAttribute("id", "jogar");
         document.getElementById('botao-jogar').appendChild(botao);
 
+        //Criando botao para recarregar a pagina
+        botaoatualizar = document.createElement("BUTTON");
+        botaoatualizar.innerText = "JOGAR COM TIMES DIFERENTES";
+        botaoatualizar.setAttribute("id", "update");
+        document.getElementById('botao-atualiza').appendChild(botaoatualizar);
+
+        botaoatualizar.onclick = function () {
+            location.reload();
+        }
+        //Fim do botao para recarregar a pagina
+
         //Ao clicar inicia os jogos
         botao.onclick = function jogar() {
+
+            for (var i = 0; i < 16; i++) {
+                clubes[i] = document.getElementById('clube' + i).value;
+                console.log(clubes[i]);
+            }
 
             //Início jogos de oitavas
             venceu = 0;

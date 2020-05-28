@@ -3,24 +3,50 @@
 }
 
 body{
-    font-family: "Lato" sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color:#f5f5f5;
 }
 
 #topo{
-    background-color: #ffd9d9;
-    border-radius: 10px;
-    width: 540px;
-    height: 320px;
+    background-color: #000;
+    border-radius: 20px;
+    border: 1.5px ridge #5e5642;
+    width: 670px;
+    height: 390px;
     margin: 5px auto;
     text-align: center;
     text-decoration: none;
-    padding: 5px;
+    padding: 8px;
     opacity: 0.8;
 }
 
+.topo-left, .topo-right{
+    float: left;
+    border: 2px inset #fff;
+    border-radius: 15px;
+    width: 300px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    background: #5e5642;
+    color: #fff;
+    margin: 10px;
+    text-align: left;
+}
+
+.topo-right{
+    color: #5e5642;
+    background: #fff;
+    border: 2px inset #5e5642 ;
+}
+
+.topo-left h3, .topo-right h3{
+    text-align: center;
+}
+
+
 h1{
     margin-top: 5px;
+    color: #fff;
 }
 
 h3{
@@ -50,25 +76,47 @@ h3{
     text-align: center;
 }
 
-#botao-jogar{
+#botao-jogar, #botao-atualiza{
     margin-left: 20px;
     margin-top: 8px;
 }
 
-#botao-jogar button{
+#botao-atualiza{
+    float: right;
+    margin-right: 30px;
+}
+
+
+#botao-jogar button, #botao-atualiza button{
     padding: 15px 20px 30px;
     color: #fff;
-    background-color: black;
+    background-color: #63625f;
     width: 100px;
     text-align: center;
     font-weight: bold;
     font-size: 15px;
 }
+
+#botao-atualiza button{
+    width: 200px;
+    text-align: center;
+    padding: 5px 10px 40px ;
+}
+
+#botao-jogar button:hover, #botao-atualiza button:hover{
+    color:#63625f;
+    background: #fff;
+}
+
+ /**************    Container dos jogos *************/
+
 #container{
     margin: 10px auto;
     width: 980px;
-    height: 850px;
+    height: 860px;
     background-color: #fff;
+    border: 1px ridge #000;
+    border-radius: 10px;
 }
 
 /* ****** Menu *******/
@@ -84,7 +132,7 @@ h3{
 
 
 .bloco-jogo{
-    border-top: 2px solid green;
+    border-top: 2px solid #38311b;
     height: 60px;
     width: 204px;
     margin:2px;
@@ -97,6 +145,7 @@ h3{
     height: 20px;
     width: 140px;
     float: left;
+    margin-bottom: 7px;
 }
 
 #clube1, #clube3, #clube5, #clube7, #clube9, #clube11, #clube13, #clube15, .time2{
@@ -105,19 +154,6 @@ h3{
     margin-top: 5px;
     margin-bottom: 3px;
     float: left;
-}
-
-#botao0, #botao2, #botao4, #botao6, #botao8, #botao10, #botao12, #botao14{
-    float: left;
-    margin-top:0;
-    margin-bottom: 5px;
-    margin-left: 8px;
-}
-
-#botao1, #botao3, #botao5, #botao7, #botao9, #botao11, #botao13, #botao15{
-    float: left;
-    margin-top: 8px;
-    margin-left: 8px;
 }
 
 button{
@@ -183,7 +219,6 @@ button{
 
 .limpar{
     clear: both;
-    text-indent: -35px;
-    margin-top: 4px;
+    text-indent: -50px;
 }
 
