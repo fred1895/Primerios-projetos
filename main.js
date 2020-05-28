@@ -218,8 +218,8 @@ function update() {
     //Fim do Algoritomo de oitavas
 
     //Início algoritmo de quartas
-    if (option.value === "quartas"){
-        
+    if (option.value === "quartas") {
+
         //Cria os campos para inserir os times e os respectivos IDs
         for (var i = 0; i < 8; i++) {
             times[i] = document.createElement("INPUT");
@@ -376,7 +376,7 @@ function update() {
         }
 
     }
-    
+
 
 }
 
